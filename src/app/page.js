@@ -18,7 +18,7 @@ export default function Home({ params }) {
   const [isLive, setIsLive] = useState(false);
   const [messages, setMessages] = useState([]);
 
-  const server =process.env.NEXT_PUBLIC_SERVER_URL || "https://think-draw.vercel.app/";
+  const server =process.env.NEXT_PUBLIC_SERVER_URL || "thinkdraw-production.up.railway.app";
   const connectionOptions = {
     "force new connection": true,
     reconnectionAttempts: "Infinity",
