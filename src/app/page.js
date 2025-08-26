@@ -18,7 +18,8 @@ export default function Home({ params }) {
   const [isLive, setIsLive] = useState(false);
   const [messages, setMessages] = useState([]);
 
-  const server = process.env.NEXT_PUBLIC_SERVER_URL;
+  const server =process.env.NEXT_PUBLIC_SERVER_URL || "http://localhost:5000";
+  console.log("server url", server);
   const connectionOptions = {
     "force new connection": true,
     reconnectionAttempts: "Infinity",
