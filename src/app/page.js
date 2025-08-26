@@ -19,7 +19,6 @@ export default function Home({ params }) {
   const [messages, setMessages] = useState([]);
 
   const server =process.env.NEXT_PUBLIC_SERVER_URL || "https://think-draw.vercel.app/";
-  console.log("server url", server);
   const connectionOptions = {
     "force new connection": true,
     reconnectionAttempts: "Infinity",
